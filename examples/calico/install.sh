@@ -7,6 +7,7 @@ wget https://github.com/projectcalico/calicoctl/releases/download/$CALICO_VERSIO
 chmod +x calicoctl-linux-amd64 
 mv calicoctl-linux-amd64 /usr/local/bin/calicoctl
 
+mkdir -p /etc/calico
 
 cat << EOF > /etc/calico/calicoctl.cfg 
 apiVersion: projectcalico.org/v3
