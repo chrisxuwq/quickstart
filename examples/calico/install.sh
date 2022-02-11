@@ -1,5 +1,6 @@
-CALICO_VERSION=$1
-ETCD_ADDR=$2
+#Put below as env variable 
+#CALICO_VERSION=$1
+#ETCD_ADDR=$2
 
 wget https://github.com/projectcalico/calicoctl/releases/download/$CALICO_VERSION/calicoctl-linux-amd64
 
