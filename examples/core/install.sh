@@ -2,7 +2,8 @@
 # env var: ETCD_ADDR
 #ETCD_ADDR=$1
 
-mkdir -p etc/eru
+mkdir -p /etc/eru
+
 cat << EOF > /etc/eru/core.yaml 
 log_level: INFO
 bind: ":5001"
