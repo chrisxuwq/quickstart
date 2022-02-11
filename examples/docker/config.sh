@@ -1,6 +1,8 @@
 # config docker to expose host port to public 
 
-ETCD_ADDR=$1
+#ETCD_ADDR=$1
+
+# Need env var ETCD_ADDR
 
 cat << EOF > /etc/docker/daemon.json
 {
