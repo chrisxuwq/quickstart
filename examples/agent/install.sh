@@ -9,6 +9,7 @@ wget $AGENT_DOWNLOAD_ADDR -O /tmp/eru_agent_download_package.tar.gz
 cd /tmp/
 tar zxf eru_agent_download_package.tar.gz 
 mv eru-agent /usr/local/bin/
+rm /tmp/eru_agent_download_package.tar.gz
 
 cat << EOF > /etc/systemd/system/eru-agent.service
 [Unit]
