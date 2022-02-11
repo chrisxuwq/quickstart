@@ -1,6 +1,8 @@
 # install eru core on docker 
-ETCD_ADDR=$1
+# env var: ETCD_ADDR
+#ETCD_ADDR=$1
 
+mkdir -p etc/eru
 cat << EOF > /etc/eru/core.yaml 
 log_level: INFO
 bind: ":5001"

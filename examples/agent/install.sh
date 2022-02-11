@@ -1,8 +1,9 @@
 # install eru-agent as a systemd service 
 
-AGENT_DOWNLOAD_ADDR=$1
-CORE_ADDR=$2
-ETCD_ADDR=$3
+# need env var: $AGENT_DOWNLOAD_ADDR, $CORE_ADDR, $ETCD_ADDR
+#AGENT_DOWNLOAD_ADDR=$1
+#CORE_ADDR=$2
+#ETCD_ADDR=$3
 
 wget AGENT_DOWNLOAD_ADDR -O /tmp/eru_agent_download_package.tar.gz 
 cd /tmp/
