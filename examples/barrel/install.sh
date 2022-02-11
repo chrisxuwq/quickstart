@@ -10,6 +10,8 @@ mv eru-barrel /usr/local/bin/
 chmod a+x /usr/local/bin/eru-barrel
 rm /tmp/eru_barrel_download_package.tar.gz 
 
+mkdir -p /etc/eru
+
 cat << EOF > /etc/eru/barrel.conf 
 # part of barrel.conf
 # your etcd endpoints on which calico meta is saved
