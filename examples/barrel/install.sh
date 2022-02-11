@@ -1,8 +1,9 @@
 # barrel version and etcd address needed 
-BARREL_DOWNLOAD_ADDR=$1
-ETCD_ADDR=$2
+# Env var: ETCD_ADDR, BARREL_DOWNLOAD_ADDR
+#BARREL_DOWNLOAD_ADDR=$1
+#ETCD_ADDR=$2
 
-wget $1 -O /tmp/eru_barrel_download_package.tar.gz 
+wget $BARREL_DOWNLOAD_ADDR -O /tmp/eru_barrel_download_package.tar.gz 
 cd /tmp/
 tar zxf eru_barrel_download_package.tar.gz 
 mv eru-barrel /usr/local/bin/
