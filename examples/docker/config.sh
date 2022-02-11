@@ -17,5 +17,5 @@ chmod 0644 /etc/docker/daemon.json
 # remove any cmd argument on listen address for docker
 sed -i '\|^ExecStart|s|-H fd://||g' /lib/systemd/system/docker.service  
 
-systemctl daemon reload 
+systemctl daemon-reload
 systemctl restart docker 
