@@ -7,7 +7,6 @@ mkdir -p /etc/eru
 cat << EOF > /etc/eru/core.yaml 
 log_level: INFO
 bind: ":5001"
-statsd: "127.0.0.1:8125"
 global_timeout: 300s
 lock_timeout: 30s
  
